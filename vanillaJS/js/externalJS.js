@@ -63,6 +63,11 @@ forLoop();
 
         document.write('<br><br>');
         document.write(colors.length);
+
+        colors.forEach(function (color) {
+            document.write('<br>')
+        document.write(color);
+        })
     }
 arrays();
 
