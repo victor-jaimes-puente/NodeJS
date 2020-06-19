@@ -1,3 +1,4 @@
+(function () {
 "use strict"
 console.log('hello worldb1');
 function logHello() {
@@ -15,13 +16,18 @@ function increment(x) {
 var four = increment(3);
 var six = increment(increment(increment(3)));
 
-document.write(four);
+document.write( " <br><br><br><br><br><br><br><br><br><br>variable practice :  " + four);
 
 // add
 function add(a , b) {
     const first = a;
     const second = b;
-   return(('first number ' + first) + ( ' plus ' + ' second number ' + second + " = ")) +(a + b);
+   return(('first number: ' + first) + ( ' plus: ' + ' second number: ' + second + " = ")) +(a + b);
 }
 
 document.write( "<br>" +  add(5,5));
+
+
+
+
+})();
