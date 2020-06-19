@@ -28,21 +28,32 @@ function add(a , b) {
 document.write( "<br>" +  add(5,5));
 
 // conditionals
-    const areYouSure = confirm("ARE YOU SURE!???");
-
-    if (areYouSure){
-        document.write(" <br> Great ");
-    } else {
-        alert("I knew it!");
-    }
+//     const areYouSure = confirm("ARE YOU SURE!???");
+//
+//     if (areYouSure){
+//         document.write(" <br> Great ");
+//     } else {
+//         alert("I knew it!");
+//     }
 
 // while loop
+function whileLoop() {
 
     var i = 0;
 
-    while (i < 11){
-        document.write('<br> this is iteration : ' + i );
+    while (i < 10){
         i ++;
+        document.write('<br> this is iteration : ' + i );
     }
+}
+whileLoop();
+// for loop
+    function forLoop() {
 
+    for ( var i = 0; i <= 20; i++){
+        document.write('<br> Using for loop : iteration ' + i);
+
+    }
+}
+forLoop();
 })();
