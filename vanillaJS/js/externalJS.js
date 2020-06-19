@@ -27,7 +27,13 @@ function add(a , b) {
 
 document.write( "<br>" +  add(5,5));
 
+// conditionals
+    const areYouSure = confirm("ARE YOU SURE!???");
 
-
+    if (areYouSure){
+        document.write(" <br> Great ");
+    } else {
+        alert("I knew it!");
+    }
 
 })();
