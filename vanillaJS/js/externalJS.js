@@ -16,7 +16,7 @@ function increment(x) {
 var four = increment(3);
 var six = increment(increment(increment(3)));
 
-document.write( " <br><br><br><br><br><br><br><br><br><br>variable practice :  " + four);
+document.write( "<br><br><br><br><br><br>variable practice :  " + four);
 
 // add
 function add(a , b) {
@@ -56,4 +56,15 @@ whileLoop();
     }
 }
 forLoop();
+
+// arrays
+    function arrays() {
+        var colors = ['red', 'blue', 'black', 'orange'];
+
+        document.write('<br><br>');
+        document.write(colors.length);
+    }
+arrays();
+
+
 })();
