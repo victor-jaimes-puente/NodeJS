@@ -36,4 +36,13 @@ document.write( "<br>" +  add(5,5));
         alert("I knew it!");
     }
 
+// while loop
+
+    var i = 0;
+
+    while (i < 11){
+        document.write('<br> this is iteration : ' + i );
+        i ++;
+    }
+
 })();
