@@ -92,7 +92,7 @@
 
             var guns = [
                 {
-                    model: "AR-15",
+                    model: "M4",
                     make: "Colt",
                     attatchments: ['M203', 'PEQ-15', 'SureFireFlashLight', 'Acog'],
                     range: ['Short', 'Medium', 'Medium-Long'],
@@ -124,5 +124,18 @@
         }
 
     gunsInfo();
+
+// Jquery
+//     $('body').css('background', 'blue');
+    $('h3').click(function () {
+        alert('h3 has been clicked');
+    })
+    $( 'h3' ).mouseenter(function () {
+        $(this).css('color', 'blue');
+    })
+    $( 'h3' ).mouseleave(function () {
+        $(this).css('color', 'white');
+    });
+
 
 })();
