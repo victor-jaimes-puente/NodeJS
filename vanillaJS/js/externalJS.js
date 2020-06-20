@@ -94,8 +94,8 @@
                 {
                     model: "M4",
                     make: "Colt",
-                    attatchments: ['M203', 'PEQ-15', 'SureFireFlashLight', 'Acog'],
-                    range: ['Short', 'Medium', 'Medium-Long'],
+                    attatchments: [' M203', ' PEQ-15', ' SureFireFlashLight', ' Acog'],
+                    range: [' Short', ' Medium', ' Medium-Long'],
                     operator: {
                         callSign: '31A',
                         position: '3rd Platoon, 1st Squad, Team Leader'
@@ -104,8 +104,8 @@
                 {
                     model: "Mini-Draco",
                     make: "CenturyArms(Romanian Import)",
-                    attatchments: ['AngledFrontGrip', 'ReflexRedDot'],
-                    range: ['Short', 'Medium'],
+                    attatchments: [' Angled Front Grip', ' Reflex RedDot'],
+                    range: [' Short', ' Medium'],
                     operator: {
                         callSign: 'DapperTyrantActual',
                         position: 'Commander'
