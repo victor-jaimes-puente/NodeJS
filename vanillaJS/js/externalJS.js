@@ -84,41 +84,45 @@
             document.write('<br>');
             document.write(color);
         });
-    arrays();
-        // objects
-
-        var guns = [
-            {
-                model: "AR-15",
-                make: "Colt",
-                attatchments: ['M203', 'PEQ-15', 'SureFireFlashLight', 'Acog'],
-                range: ['Short', 'Medium', 'Medium-Long'],
-                operator: {
-                    callSign: '31A',
-                    position: '3rd Platoon, 1st Squad, Team Leader'
-                }
-            },
-            {
-                model: "Mini-Draco",
-                make: "CenturyArms(Romanian Import)",
-                attatchments: ['AngledFrontGrip', 'ReflexRedDot'],
-                range: ['Short', 'Medium'],
-                operator: {
-                    callSign: 'DapperTyrantActual',
-                    position: 'Commander'
-                }
-
-            }
-        ];
-
     }
-    guns.forEach(function (gun) {
-        car.forEach(function (model) {
-            document.write(model);
-        })
+        arrays();
 
-    })
+        // objects
+        function gunsInfo() {
+
+            var guns = [
+                {
+                    model: "AR-15",
+                    make: "Colt",
+                    attatchments: ['M203', 'PEQ-15', 'SureFireFlashLight', 'Acog'],
+                    range: ['Short', 'Medium', 'Medium-Long'],
+                    operator: {
+                        callSign: '31A',
+                        position: '3rd Platoon, 1st Squad, Team Leader'
+                    }
+                },
+                {
+                    model: "Mini-Draco",
+                    make: "CenturyArms(Romanian Import)",
+                    attatchments: ['AngledFrontGrip', 'ReflexRedDot'],
+                    range: ['Short', 'Medium'],
+                    operator: {
+                        callSign: 'DapperTyrantActual',
+                        position: 'Commander'
+                    }
+
+                }
+            ];
+
+            document.write('<h3 style="color: blueviolet">Gun objects</h3>')
+
+                guns.forEach(function (gun) {
+                document.write('<br> Operator : ' + gun.operator.callSign + '<br> Position : '+ gun.operator.position +'<br> Model : ' + gun.model + '<br> Make : ' + gun.make + '<br> Attachments : ' + gun.attatchments + '<br> Range : ' + gun.range + '<br><br>');
 
 
+            })
+        }
+
+    gunsInfo();
 
 })();
