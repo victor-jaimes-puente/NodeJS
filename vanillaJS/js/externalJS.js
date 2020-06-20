@@ -49,7 +49,7 @@
         }
     }
 
-    whileLoop();
+    // whileLoop();
 
 // for loop
     function forLoop() {
@@ -60,26 +60,30 @@
         }
     }
 
-    forLoop();
+    // forLoop();
 
 // arrays
     function arrays() {
         // variables
         var colors = ['red', 'blue', 'black', 'orange'];
         console.log(colors);
+        console.log(colors.reverse());
+
         // length
-        document.write('<br><br>');
+        document.write('<h3 style="color: red">Length</h3>');
         document.write(colors.length);
+        // forEach
+        document.write('<h3 style="color: red">For Each</h3>')
+        colors.forEach(function (color) {
+            document.write('<br>');
+            document.write(color);
+        });
         // reverse
+        document.write('<h3 style="color: red">Reverse</h3>')
         colors.reverse().forEach(function (color) {
             document.write('<br>');
             document.write(color);
-        })
-        // forEach
-        colors.forEach(function (color) {
-            document.write('<br>')
-            document.write(color);
-        })
+        });
         //
 
 
