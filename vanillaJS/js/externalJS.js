@@ -1,31 +1,33 @@
 (function () {
-"use strict"
-console.log('hello worldb1');
-function logHello() {
-    var output = console.log("hello World")
-    return output;
-}
-logHello();
+    "use strict"
+    console.log('hello worldb1');
+
+    function logHello() {
+        var output = console.log("hello World")
+        return output;
+    }
+
+    logHello();
 
 // Variable practice
 
-function increment(x) {
-    return x + 1;
-}
+    function increment(x) {
+        return x + 1;
+    }
 
-var four = increment(3);
-var six = increment(increment(increment(3)));
+    var four = increment(3);
+    var six = increment(increment(increment(3)));
 
-document.write( "<br><br><br><br><br><br>variable practice :  " + four);
+    document.write("<br><br><br><br><br><br>variable practice :  " + four);
 
 // add
-function add(a , b) {
-    const first = a;
-    const second = b;
-   return(('first number: ' + first) + ( ' plus: ' + ' second number: ' + second + " = ")) +(a + b);
-}
+    function add(a, b) {
+        const first = a;
+        const second = b;
+        return (('first number: ' + first) + (' plus: ' + ' second number: ' + second + " = ")) + (a + b);
+    }
 
-document.write( "<br>" +  add(5,5));
+    document.write("<br>" + add(5, 5));
 
 // conditionals
 //     const areYouSure = confirm("ARE YOU SURE!???");
@@ -37,39 +39,53 @@ document.write( "<br>" +  add(5,5));
 //     }
 
 // while loop
-function whileLoop() {
+    function whileLoop() {
 
-    var i = 0;
+        var i = 0;
 
-    while (i < 10){
-        i ++;
-        document.write('<br> this is iteration : ' + i );
+        while (i < 10) {
+            i++;
+            document.write('<br> this is iteration : ' + i);
+        }
     }
-}
-whileLoop();
+
+    whileLoop();
+
 // for loop
     function forLoop() {
 
-    for ( var i = 0; i <= 20; i++){
-        document.write('<br> Using for loop : iteration ' + i);
+        for (var i = 0; i <= 20; i++) {
+            document.write('<br> Using for loop : iteration ' + i);
 
+        }
     }
-}
-forLoop();
+
+    forLoop();
 
 // arrays
     function arrays() {
+        // variables
         var colors = ['red', 'blue', 'black', 'orange'];
-
+        console.log(colors);
+        // length
         document.write('<br><br>');
         document.write(colors.length);
-
+        // reverse
+        colors.reverse().forEach(function (color) {
+            document.write('<br>');
+            document.write(color);
+        })
+        // forEach
         colors.forEach(function (color) {
             document.write('<br>')
-        document.write(color);
+            document.write(color);
         })
+        //
+
+
     }
-arrays();
+
+    arrays();
 
 
 })();
