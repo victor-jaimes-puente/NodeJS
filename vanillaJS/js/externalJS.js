@@ -98,7 +98,7 @@
                     range: [' Short', ' Medium', ' Medium-Long'],
                     operator: {
                         callSign: '31A',
-                        position: '3rd Platoon, 1st Squad, Team Leader'
+                        position: '3rd Platoon, 1st Squad, Alpha Team Leader'
                     }
                 },
                 {
@@ -136,6 +136,18 @@
     $( 'h3' ).mouseleave(function () {
         $(this).css('color', 'white');
     });
+// .Reduce
+    document.write('<br> .reduce <br>');
+    const salesPeople = [
+        {name: 'Jim Halpert', sales: 100},
+        {name: 'Dwight Schrute', sales: 50},
+        {name: 'Andy Bernard', sales: 150},
+    ];
 
+    const totalSales = salesPeople.reduce((total, person) => {
+        return total + person.sales;
+    }, 0);
+    document.write(totalSales);
+    document.write('<br>');
 
 })();
