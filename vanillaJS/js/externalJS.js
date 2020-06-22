@@ -149,5 +149,31 @@
     }, 0);
     document.write(totalSales);
     document.write('<br>');
+    function costOfLiving() {
+        var bills = [
+            {
+                name: 'Rent',
+                cost: 600,
+            },
+            {
+                name: 'Electric',
+                cost: 150,
+            },
+            {
+                name: 'Internet',
+                cost: 80,
+            },
+            {
+                name: 'Food',
+                cost: 400,
+            }
 
+        ]
+        var billsTotal = bills.reduce(function (total,bill) {
+            return ( total + bill.cost);
+
+        },0);
+        document.write(billsTotal);
+    }
+    costOfLiving();
 })();
